@@ -1,14 +1,14 @@
 process.env.PUPPETEER_CACHE_DIR = 'E:\\tmdb-scraper\\.cache\\puppeteer';
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 const config = require('./puppeteer.cjs');
 const path = require('path');
 // Define the cache directory
 process.env.PUPPETEER_CACHE_DIR = 'E:\\tmdb-scraper\\.cache\\puppeteer';
 
 const cacheDirectory = path.join(__dirname, '.cache', 'puppeteer');
-console.log('Cache= ',cacheDirectory);
-console.log("Using Puppeteer cache directory:", process.env.PUPPETEER_CACHE_DIR);
-console.log("Using Puppeteer download path:", process.env.PUPPETEER_DOWNLOAD_PATH);
+//console.log('Cache= ',cacheDirectory);
+//console.log("Using Puppeteer cache directory:", process.env.PUPPETEER_CACHE_DIR);
+//console.log("Using Puppeteer download path:", process.env.PUPPETEER_DOWNLOAD_PATH);
 
 async function scrapeMovies() {
     const browser = await puppeteer.launch({
