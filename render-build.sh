@@ -73,3 +73,5 @@ fi
 # Store Puppeteer cache for future builds
 echo "...Storing Puppeteer Cache in Build Cache"
 cp -R "$PUPPETEER_CACHE_DIR" "$XDG_CACHE_HOME/puppeteer"
+npm install dotenv --force
+npm rebuild
