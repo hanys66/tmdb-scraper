@@ -14,7 +14,8 @@ async function scrapeMovies() {
     const browser = await puppeteer.launch({
         headless: "new",
         //executablePath: puppeteer.executablePath(), // Use Puppeteer's Chromium
-        executablePath: 'E:\\tmdb-scraper\\chrome-win\\chrome-win\\chrome.exe' ,// Replace with actual path
+       // executablePath: 'E:\\tmdb-scraper\\chrome-win\\chrome-win\\chrome.exe' ,// Replace with actual path
+        executablePath:"C:\\temp\\puppeteer-cache\\chrome\\win64-134.0.6998.35\\chrome-win64\\chrome.exe",
         args: ["--no-sandbox", "--disable-setuid-sandbox",
         ],
         // Set the cache directory
